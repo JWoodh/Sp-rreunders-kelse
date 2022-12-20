@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spørreundersøkelse</h1>
+    <p>Viusan er PHP-kriger:</p>
+    <form id="viu">
+    <input type="radio" id="phpenig" name="viu" value="1" onclick="viuEl = document.querySelector('#phpenig')">
+    <label for="phpenig">Enig</label> <br>
+    <input type="radio" id="phpuenig" name="viu" value="0" onclick="viuEl = document.querySelector('#phpuenig')">
+    <label for="phpuenig">Uenig</label> <br>
+    </form>
+
+    <p>Jon er søt:</p>
+    <input type="radio" id="jonenig" name="jon" value="1" onclick="jonEl = document.querySelector('#jonenig')">
+    <label for="jonenig">Enig</label> <br>
+    <input type="radio" id="jonuenig" name="jon" value="0" onclick="jonEl = document.querySelector('#jonuenig')">
+    <label for="jonuenig">Uenig</label> <br>
+
+    <p>Martin:</p>
+    <input type="radio" id="martinenig" name="martin" value="1" onclick="martinEl = document.querySelector('#martinenig')">
+    <label for="martinenig">Enig</label> <br>
+    <input type="radio" id="martinuenig" name="martin" value="0" onclick="martinEl = document.querySelector('#martinuenig')">
+    <label for="martinuenig">Uenig</label> <br>
+
+    <p>Adrian er Fish&Chips ambassadør:</p>
+    <input type="radio" id="fishenig" name="adrian" value="1" onclick="adrianEl = document.querySelector('#fishenig')"> 
+    <label for="fishenig">Enig</label> <br>
+    <input type="radio" id="fishuenig" name="adrian" value="0" onclick="adrianEl = document.querySelector('#fishuenig')">
+    <label for="fishuenig">Uenig</label> <br><br><br>
+
+    <button onclick="submit()">Submit</button>
+    <button onclick="vis()">Vis Resultat</button>
+
+    <div id="resultat">
+        <p id="total"></p>
+        <div id="viudiv">ViuPHP</div>
+        <div id="jondiv">JonSøt</div>
+        <div id="martindiv">Martin</div>
+        <div id="adriandiv">AdrianFish&Chips</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
